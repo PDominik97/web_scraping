@@ -23,11 +23,6 @@ class Offers:
                     or brand.title() in name:
                 print(name)
             else:
-                # print('error')
+
                 print('Niestety nie mamy ofert dla wybranego pojazdu!')
                 break
-
-
-# scrap = Offers()
-# scrap.get_offers('aixam', 'a721')
-# scrap.get_offers('audi', 'a1')

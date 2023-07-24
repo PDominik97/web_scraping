@@ -17,7 +17,7 @@ class Brand:
                     # If the current element does not contain nested HTML elements,
                     # then .contents[0] will be just the text inside it
                     car_brand.append(brand.contents[0].lower())
-        # print(car_brand)
+
         return car_brand
 
     def check(self, brand: str):
@@ -32,8 +32,3 @@ class Brand:
         for item in self.scrap_brand_olx():
             print(item, end=', ')
         print('\n')
-
-# scrap = Brand()
-# scrap.scrap_brand_olx()
-# scrap.question()
-# scrap.check()

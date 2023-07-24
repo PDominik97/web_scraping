@@ -27,6 +27,3 @@ class Model:
         else:
             return True
 
-
-# car_model = Model()
-# car_model.scrap_model_autocentrum('opel')
