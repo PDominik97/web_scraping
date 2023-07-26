@@ -22,10 +22,10 @@ class Brand:
 
     def check(self, brand: str):
         if brand not in self.scrap_brand_olx():
-            print('nie odnaleziono marki! Spróbuj jeszcze raz!')
+            print('Cannot find chosen brand! Try again!')
             return False
         else:
-            print('wybierz model z listy!')
+            print('Choose model from the list!')
             return True
 
     def question(self):

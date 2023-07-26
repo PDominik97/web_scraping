@@ -22,7 +22,7 @@ class Model:
 
     def check(self, brand: str, model: str):
         if model not in self.scrap_model_autocentrum(brand):
-            print('nie odnaleziono modelu!')
+            print('Cannot find!')
             return False
         else:
             return True

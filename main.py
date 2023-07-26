@@ -7,9 +7,9 @@ models = Model()
 offers = Offers()
 
 if __name__ == '__main__':
-    print('Wybierz marke pojazdu z listy!')
+    print('Choose brand from the list!')
     brands.question()
-    brand = input('podaj marke z listy: ')
+    brand = input('Brand: ')
     if brands.check(brand) is True:
         models.question(brand)
         model = input('Model: ')

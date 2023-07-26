@@ -13,7 +13,7 @@ class JsonSave:
         data = soup.find_all(class_='css-u2ayx9')
 
         json_dict = {}
-        path = input('podaj sciezke do zapisania pliku json: ')
+        path = input('Path to save json file: ')
         with open(f'{path}/olx_input.json', 'w', encoding='utf-8') as file:
             for item in data:
                 # title
@@ -21,6 +21,6 @@ class JsonSave:
                 # price
                 json_dict['price'] = item.select_one('p').text
 
-                # ensure_ascii - wyswietla polskie znaki w pliku
+                # ensure_ascii - show polish marks in the file
                 file.write(json.dumps(json_dict, ensure_ascii=False))
                 file.write('\n')
